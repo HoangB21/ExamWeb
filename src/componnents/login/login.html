@@ -15,94 +15,82 @@
       href="login.css" />
   </head>
   <body>
-    <h2>Welcome to PTIT Exam</h2>
+    <h2 class="welcome">Welcome to PTIT Exam</h2>
     <div
       class="container"
       id="container">
       <div class="form-container sign-up-container">
-        <form action="#">
-          <h1>Create Account</h1>
-          <div class="social-container">
-            <a
-              href="#"
-              class="social"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-            <a
-              href="#"
-              class="social"
-              ><i class="fab fa-google-plus-g"></i
-            ></a>
-            <a
-              href="#"
-              class="social"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-          </div>
-          <span>or use your email for registration</span>
+        <form
+          action="#"
+          class="registerForm">
+          <h1>Tạo tài khoản</h1>
           <input
             type="text"
-            placeholder="Name" />
+            name="username"
+            minlength="6"
+            maxlength="24"
+            placeholder="Username"
+            required />
           <input
             type="email"
-            placeholder="Email" />
+            name="email"
+            placeholder="Email"
+            required />
           <input
             type="password"
-            placeholder="Password" />
-          <button>Sign Up</button>
+            name="password"
+            minlength="8"
+            maxlength="24"
+            placeholder="Password"
+            required />
+          <input
+            type="password"
+            name="confirmPassword"
+            minlength="8"
+            maxlength="24"
+            placeholder="Confirm password"
+            required />
+          <p class="erorr_message">
+            Mật khẩu phải có chữ hoa, chữ thường, chữ số và ký tự đặc biệt
+          </p>
+          <button type="submit">Đăng ký</button>
         </form>
       </div>
       <div class="form-container sign-in-container">
-        <form action="#">
-          <h1>Sign in</h1>
-          <div class="social-container">
-            <a
-              href="#"
-              class="social"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-            <a
-              href="#"
-              class="social"
-              ><i class="fab fa-google-plus-g"></i
-            ></a>
-            <a
-              href="#"
-              class="social"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-          </div>
-          <span>or use your account</span>
+        <form
+          action="#"
+          class="loginForm">
+          <h1>Đăng nhập</h1>
           <input
             type="email"
-            placeholder="Email" />
+            placeholder="Email"
+            required />
           <input
             type="password"
-            placeholder="Password" />
-          <a href="#">Forgot your password?</a>
-          <button>Sign In</button>
+            placeholder="Password"
+            required />
+          <a href="#">Quên mật khẩu?</a>
+          <button>Đăng nhập</button>
         </form>
       </div>
       <div class="overlay-container">
         <div class="overlay">
           <div class="overlay-panel overlay-left">
-            <h1>Welcome Back!</h1>
-            <p>
-              To keep connected with us please login with your personal info
-            </p>
+            <h1>Đã có tài khoản?</h1>
+            <p>Đăng nhập và bắt đầu luyện tập, kiểm tra</p>
             <button
               class="ghost"
               id="signIn">
-              Sign In
+              Đăng nhập
             </button>
           </div>
           <div class="overlay-panel overlay-right">
-            <h1>Hello, Friend!</h1>
-            <p>Enter your personal details and start journey with us</p>
+            <h1>Chào bạn!</h1>
+            <p>Bạn là người mới?</p>
             <button
               class="ghost"
               id="signUp">
-              Sign Up
+              Đăng ký
             </button>
           </div>
         </div>

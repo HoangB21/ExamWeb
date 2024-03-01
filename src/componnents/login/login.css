@@ -2,11 +2,13 @@
 :root {
   --colorbg: #4e5b9f;
 }
+
 * {
   box-sizing: border-box;
 }
 
 body {
+  font-size: 62.5%;
   font-family: "Montserrat", sans-serif;
   background: #f6f5f7;
   display: flex;
@@ -28,7 +30,7 @@ h2 {
 }
 
 p {
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 100;
   line-height: 20px;
   letter-spacing: 0.5px;
@@ -36,7 +38,7 @@ p {
 }
 
 span {
-  font-size: 12px;
+  font-size: 1.2rem;
 }
 
 a {
@@ -51,7 +53,7 @@ button {
   border: 1px solid var(--colorbg);
   background-color: var(--colorbg);
   color: #ffffff;
-  font-size: 12px;
+  font-size: 0.8rem;
   font-weight: bold;
   padding: 12px 45px;
   letter-spacing: 1px;
@@ -81,6 +83,10 @@ form {
   padding: 0 50px;
   height: 100%;
   text-align: center;
+}
+form h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 input {
@@ -139,14 +145,12 @@ input {
     opacity: 0;
     z-index: 1;
   }
-
   50%,
   100% {
     opacity: 1;
     z-index: 5;
   }
 }
-
 .overlay-container {
   position: absolute;
   top: 0;
@@ -196,6 +200,13 @@ input {
   transform: translateX(0);
   transition: transform 0.6s ease-in-out;
 }
+.overlay-panel h1 {
+  font-size: 2rem;
+}
+.overlay-panel p {
+  font-size: 1rem;
+  font-weight: 500;
+}
 
 .overlay-left {
   transform: translateX(-20%);
@@ -214,17 +225,4 @@ input {
   transform: translateX(20%);
 }
 
-.social-container {
-  margin: 20px 0;
-}
-
-.social-container a {
-  border: 1px solid #dddddd;
-  border-radius: 50%;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 5px;
-  height: 40px;
-  width: 40px;
-}
+/*# sourceMappingURL=login.css.map */
