@@ -88,6 +88,14 @@ form h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
+form .erorr_message {
+  display: block;
+  height: 40px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-align: justify;
+  color: red;
+}
 
 input {
   background-color: #eee;
@@ -184,6 +192,7 @@ input {
 
 .container.right-panel-active .overlay {
   transform: translateX(50%);
+  transition: all 0.6s;
 }
 
 .overlay-panel {
